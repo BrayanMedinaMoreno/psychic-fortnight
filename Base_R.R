@@ -83,7 +83,7 @@ exists("c")
 exists("a")
 
 
-rm(x)
+rm(tableGames)
 
 
 rm(list = ls ())
@@ -121,3 +121,26 @@ class(fecha)
 
 is.factor(x)
 is.character(y)
+
+
+#GETWD Y SETWD
+
+library(readr)
+library(XML)
+
+getwd() # mirar donde estoy 
+
+setwd() # Asignar nuevo lugar de trabajo
+
+choose.dir() # mira de manera grafica
+
+setdd(choose.dir()) # mirar la manera grafica de la ruta
+
+choose.files() #mirar files
+
+mitabla <- read_csv(choose.files()) # traer un archivo
+
+tableGames <- read_csv(choose.files())
+rm(mitabla)
+rm(tableGames)
+
